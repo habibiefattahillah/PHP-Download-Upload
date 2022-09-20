@@ -2,105 +2,71 @@
 
 
 
-### Percobaan Menghubungkan Dua Perangkat Dengan Router
+## Percobaan Menghubungkan Dua Perangkat Dengan Router
 
 
 
-#### 1. Topologi Jaringan
+### 1. Topologi Jaringan
 
-
-
-![Gambar 1](../assets/minggu-4/pkj-prak4-1.PNG)
-
-
+![Gambar 1](asset/1.png)
+Terdapat dua PC yang terhubung melalui dua router
 
 Kita buat topologi jaringan seperti gambar di atas.
 
 
+### 2. Setting IP
 
-#### 2. Setting IP
+- IP pada PC0
 
+![Gambar 2](asset/2.png)
 
+- IP pada PC1
 
-![Gambar 2](../assets/minggu-4/pkj-prak4-2.PNG)
+![Gambar 3](asset/3.png)
 
+- IP pada Router0 port0
 
+![Gambar 4](asset/4.png)
 
-Pengaturan ip pada pc 0
+- IP pada Router0 port1
 
+![Gambar 5](asset/5.png)
 
+- IP pada Router1 port0
 
-![Gambar 3](../assets/minggu-4/pkj-prak4-3.PNG)
+![Gambar 6](asset/6.png)
 
+- IP pada Router1 port1
 
+![Gambar 7](asset/7.png)
 
-Pengaturan ip pada pc 1
 
+### Tabel Routing Static
 
+- Tabel routing static pada router0
 
-![Gambar 4](../assets/minggu-4/pkj-prak4-4.PNG)
+![Gambar 8](asset/8.png)
+Menghubungkan router0 pada jaringan 1 melalui router1 port1
 
+- Tabel routing static pada router1
 
+![Gambar 9](asset/9.png)
+Menghubungkan router1 pada jaringa 3 melalui router0 port0
 
-Pengaturan ip pada router 0 port 0
 
+### 3. Percobaan PING
 
+- Cek ARP cache
 
-![Gambar 5](../assets/minggu-4/pkj-prak4-5.PNG)
+![Gambar 10](asset/10.png)
+ARP belum menyimpan MAC Address PC1
 
+- Dari PC0, ping PC1
 
+![Gambar 11](asset/11.png)
+Terjadi RTO dua kali, yang kemudian koneksi terhubung dan berhasil melakukan ping.
 
-Pengaturan ip pada router 0 port 1
+- Dari PC1, ping PC0 (Setelah ping pertama)
 
-
-
-![Gambar 6](../assets/minggu-4/pkj-prak4-6.PNG)
-
-
-
-Pengaturan table routing static pada router 0
-
-
-
-![Gambar 7](../assets/minggu-4/pkj-prak4-7.PNG)
-
-
-
-Pengaturan ip pada router 1 port 0
-
-
-
-![Gambar 8](../assets/minggu-4/pkj-prak4-8.PNG)
-
-
-
-Pengaturan ip pada router 1 port 1
-
-
-
-![Gambar 9](../assets/minggu-4/pkj-prak4-9.PNG)
-
-
-
-Pengaturan table routing static pada router 1
-
-
-
-#### 3. Percobaan PING
-
-
-
-![Gambar 10](../assets/minggu-4/pkj-prak4-10.PNG)
-
-
-
-arp tidak menyimpan alamat ip pc 1
-
-
-
-![Gambar 11](../assets/minggu-4/pkj-prak4-11.PNG)
-
-
-
-Hasil setelah ping, terjadi RTO sebanyak 2 kali setelah itu berhasil melakukan ping.
-
+![Gambar 12](asset/12.png)
+ARP telah disimpan, dan ketika ping tidak ada RTO sama sekali.
