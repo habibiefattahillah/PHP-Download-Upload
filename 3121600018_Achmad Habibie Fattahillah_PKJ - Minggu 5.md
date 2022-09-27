@@ -13,13 +13,11 @@
 
 - Konfigurasi Router On Stick pada Router
 <img src="asset/Prak5/4.png">
-</br>
 -> Sub-interface Gig0/0/0.10 untuk default gateway VLAN 10 </br>
 -> Sub interface Gig0/0/0.30 untuk default gateway VLAN 30
 
 - Konfigurasi Vlan 10 dan Vlan 30 pada Switch
 <img src="asset/Prak5/5.png">
-</br>
 VLAN 10 dan VLAN 30 sudah ada, namun tidak memiliki PORT
 
 - Mode access untuk interface 0/1 ke VLAN 10 dan 0/2 ke VLAN 30 pada Switch yang terhubung pada PC,
@@ -28,7 +26,6 @@ VLAN 10 dan VLAN 30 sudah ada, namun tidak memiliki PORT
 
 - Mengecek PORT VLAN 10 dan VLAN 30
 <img src="asset/Prak5/7.png">
-<br>
 -> VLAN 10 memiliki PORT 0/1 </br>
 -> VLAN 30 memiliki PORT 0/2
 
